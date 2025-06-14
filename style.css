@@ -7,6 +7,7 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Header / Hero Section */
 header {
   background: linear-gradient(135deg, #003973, #e5e5be);
   color: white;
@@ -22,26 +23,32 @@ header {
   flex-wrap: wrap;
 }
 
-.profile-pic {
+.profile-pic-large {
   width: 180px;
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.8);
+.hero-text {
+  text-align: left;
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .hero-row {
+    flex-direction: column;
+    text-align: center;
   }
-  100% {
-    opacity: 1;
-    transform: scale(1);
+
+  .hero-text {
+    text-align: center;
   }
 }
 
+/* Buttons */
 .btn {
   text-decoration: none;
   color: white;
@@ -57,6 +64,7 @@ header {
   background: #005a9e;
 }
 
+/* Sections */
 section {
   padding: 3em 2em;
   max-width: 900px;
@@ -91,6 +99,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 2em;
@@ -98,6 +107,7 @@ footer {
   color: white;
 }
 
+/* Scroll Animation */
 .hidden-section {
   opacity: 0;
   transform: translateY(20px);
@@ -107,4 +117,10 @@ footer {
 .show-section {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Image animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
 }
