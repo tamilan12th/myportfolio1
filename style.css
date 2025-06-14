@@ -81,6 +81,12 @@ h2 {
   margin-bottom: 1em;
 }
 
+h3 {
+  color: #98fb98;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
 ul {
  list-style: disc;
   padding-left: 1.5em;
