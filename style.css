@@ -87,6 +87,7 @@ ul {
 }
 
 ul li {
+  list-style: disc;
   padding: 0.5em 0;
 }
 
