@@ -1,0 +1,88 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(135deg, #003973, #e5e5be);
+  color: white;
+  text-align: center;
+  padding: 4em 1em;
+}
+
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  background: #0078D4;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #005a9e;
+}
+
+section {
+  padding: 3em 2em;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #003973;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 0.5em 0;
+}
+
+a {
+  color: #0078D4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 2em;
+  background: #003973;
+  color: white;
+}
+
+.hidden-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show-section {
+  opacity: 1;
+  transform: translateY(0);
+}
