@@ -1,3 +1,4 @@
+/* General styling */
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -7,6 +8,7 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Header / Hero Section */
 header {
   background: linear-gradient(135deg, #003973, #e5e5be);
   color: white;
@@ -14,12 +16,23 @@ header {
   padding: 4em 1em;
 }
 
-.profile-pic {
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 1em;
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
 }
 
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
 .btn {
   text-decoration: none;
   color: white;
@@ -35,6 +48,7 @@ header {
   background: #005a9e;
 }
 
+/* Sections */
 section {
   padding: 3em 2em;
   max-width: 900px;
@@ -69,6 +83,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 2em;
@@ -76,6 +91,7 @@ footer {
   color: white;
 }
 
+/* Scroll animation */
 .hidden-section {
   opacity: 0;
   transform: translateY(20px);
