@@ -22,7 +22,7 @@ header {
   flex-wrap: wrap;
 }
 
-.profile-pic-large {
+.profile-pic {
   width: 180px;
   height: 180px;
   border-radius: 50%;
