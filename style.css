@@ -14,21 +14,21 @@ header {
   padding: 4em 1em;
 }
 
-.hero {
+.hero-row {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding-top: 2rem;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.profile-pic {
-  width: 140px;
-  height: 140px;
+.profile-pic-large {
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 1rem;
-  animation: fadeIn 1.5s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
 }
 
 @keyframes fadeIn {
